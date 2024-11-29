@@ -1,0 +1,82 @@
+title: "TIL: [Insert Brief Summary of What You Learned]"
+labels: ["TIL: TODAY I LEARNDED"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Welcome to TIL: Today I Learned! 👋**  
+        Sharing your learnings not only helps you solidify what you’ve learned but also helps others in the community.  
+        Follow this template to structure your post effectively.  
+
+  - type: input
+    id: summary
+    attributes:
+      label: Summarize What You Learned
+      description: "Write a brief, one-sentence summary of what you learned."
+      placeholder: "e.g., 'I learned how to use the React useEffect hook for data fetching.'"
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Explain Your Learning in Detail
+      description: |
+        Describe what you learned, why it’s important, and how it could be applied. Include examples, if possible.
+      placeholder: "e.g., 'I was working on a project where I needed to fetch data from an API. I learned that...' "
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: What Topic Does This Relate To?
+      description: "Choose the topic that best fits your learning."
+      options:
+        - Frontend (HTML, CSS, JavaScript, React)
+        - Backend (Python, Django, SQL, etc.)
+        - Tooling (Git/GitHub, VSCode, etc.)
+        - Deployment/Hosting
+        - General Tech Skills
+        - Other
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Example Code or Resource Links (Optional)  
+        Share any code snippets or resources that helped you learn this topic. Providing examples makes your TIL more valuable to others!
+
+  - type: textarea
+    id: code-snippet
+    attributes:
+      label: Code Snippet or Example
+      description: "Share an example of the code or implementation you worked on. Use three backticks (```) to format as code."
+      placeholder: "```\n// Your code here\n```"
+
+  - type: input
+    id: resource-1
+    attributes:
+      label: Helpful Resource Link 1
+      description: "Share a helpful resource you used to learn this."
+      placeholder: "e.g., https://reactjs.org/docs/hooks-effect.html"
+
+  - type: input
+    id: resource-2
+    attributes:
+      label: Helpful Resource Link 2 (Optional)"
+      description: "Add another useful resource."
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Reflect on Your Learning (Optional)  
+        Take a moment to reflect on your experience. This step is optional but helps reinforce your understanding.
+
+  - type: textarea
+    id: reflection
+    attributes:
+      label: Reflection
+      description: "What did you enjoy or find challenging about learning this? How will you use this knowledge in the future?"
+      placeholder: "e.g., 'I found it challenging to understand when useEffect runs, but now I understand that...'"
