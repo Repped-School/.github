@@ -4,7 +4,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        **Welcome to TIL: Today I Learned! 👋**  
+        # **Welcome to TIL: Today I Learned! 👋**  
         Sharing your learnings not only helps you solidify what you’ve learned but also helps others in the community.  
         Follow this template to structure your post effectively.  
 
