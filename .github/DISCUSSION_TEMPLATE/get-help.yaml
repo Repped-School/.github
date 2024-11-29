@@ -41,16 +41,16 @@ body:
     attributes:
       label: What Have You Tried? 🧠
       description: "List steps you’ve already attempted. Example: 'Checked console logs and added error handling.'"
-      validations:
-        required: true
+    validations:
+      required: true
 
   - type: textarea
     id: expected
     attributes:
       label: What Are You Expecting to Happen?
       description: "Describe the outcome you're aiming for. Example: 'Clicking the button should update the UI.'"
-      validations:
-        required: true
+    validations:
+      required: true
 
   - type: dropdown
     id: error-check
@@ -60,8 +60,8 @@ body:
         - Yes, I found errors (add details below)
         - Yes, but no errors appeared
         - No, I didn’t check (please check before submitting!)
-      validations:
-        required: true
+    validations:
+      required: true
 
   - type: textarea
     id: console-errors
@@ -69,8 +69,8 @@ body:
       label: Console/Terminal Error Messages
       description: "Paste any error messages. Use N/A if none apply."
       placeholder: "Enter error messages or N/A"
-      validations:
-        required: true
+    validations:
+      required: true
 
   - type: markdown
     attributes:
@@ -82,21 +82,27 @@ body:
   - type: input
     id: resource-1
     attributes:
-      label: Research Link 1 (Optional)
+      label: Research Link 1
       description: "Paste a helpful link and explain why it’s relevant."
       placeholder: "e.g., Stack Overflow, MDN Docs"
+    validations:
+      required: false
 
   - type: input
     id: resource-2
     attributes:
       label: Research Link 2 (Optional)
       description: "Add another useful link."
+    validations:
+      required: false
 
   - type: input
     id: resource-3
     attributes:
       label: Research Link 3 (Optional)
       description: "Add a third useful link."
+    validations:
+      required: false
 
   - type: textarea
     id: code-link
@@ -104,5 +110,5 @@ body:
       label: Share Your Code
       description: "Provide a **direct link** to the GitHub file causing the issue (not the whole repo)."
       placeholder: "e.g., https://github.com/username/repo/blob/main/file.js"
-      validations:
-        required: true
+    validations:
+      required: true
