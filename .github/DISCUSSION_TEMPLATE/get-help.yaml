@@ -4,15 +4,9 @@ body:
   - type: markdown
     attributes:
       value: |
-        **Welcome! 👋**  
+        ## **Welcome! 👋**  
         We're here to help! Complete this form to make it easier for us to understand and solve your issue.  
-
-        **Before Submitting:**  
-        - ✅ Have you searched similar tickets or resources?  
-        - ✅ Is your title descriptive and specific to your TECH issue?  
-
-        Our team reviews requests within **48 hours**.  
-
+        
   - type: dropdown
     id: topic
     attributes:
@@ -112,3 +106,15 @@ body:
       placeholder: "e.g., https://github.com/username/repo/blob/main/file.js"
     validations:
       required: true
+
+- type: markdown
+    attributes:
+      value: |
+        ## **Before Submitting:**  
+        - ✅ Have you searched similar tickets or resources?  
+        - ✅ Is your title descriptive and specific to your TECH issue?  
+
+        ### REMONDER: Our team reviews requests within **48 hours**.
+
+
+  
