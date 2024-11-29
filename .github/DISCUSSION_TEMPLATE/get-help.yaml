@@ -1,7 +1,3 @@
-name: "Help Request"
-about: "Submit a help request for technical issues or guidance."
-title: "[Help Needed] - Brief Summary of Your Issue"
-labels: ["help request"] # Default label; more will be added through dropdown
 body:
   - type: markdown
     attributes:
