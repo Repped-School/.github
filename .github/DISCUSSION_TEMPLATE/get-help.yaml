@@ -1,141 +1,108 @@
+title: "[Help Needed] - Brief Summary of Your Issue"
+labels: ["help request"]
 body:
   - type: markdown
     attributes:
       value: |
         **Welcome! 👋**  
-        We're here to help, and by answering these questions, you'll help us understand your problem faster and also learn some valuable problem-solving skills along the way!  
-        **Make sure you're using this Help Discussion for technical issues.**
+        We're here to help! Complete this form to make it easier for us to understand and solve your issue.  
 
-  - type: markdown
+        **Before Submitting:**  
+        - ✅ Have you searched similar tickets or resources?  
+        - ✅ Is your title descriptive and specific to your TECH issue?  
+
+        Our team reviews requests within **48 hours**.  
+
+  - type: dropdown
+    id: topic
     attributes:
-      value: |
-        ## Describing Your Problem 🤔  
-        This section helps you practice explaining technical issues clearly—a crucial skill for your tech career!
-        In this section, you may use video like [Loom](https://www.loom.com/) or [Veed](https://www.veed.io/) if writing is difficult for you.
-        **VIDEOS SHOULD BE 5 MINUTES OR LESS**
-          
+      label: What is your issue related to? (Select one)
+      description: "Choose the category that best describes your issue."
+      options:
+        - Frontend (HTML, CSS, JavaScript, React)
+        - Backend (Python, Django, SQL, etc.)
+        - Tooling (Git/GitHub, VSCode, etc.)
+        - Deployment/Hosting
+        - Other
+    validations:
+      required: true
+
   - type: textarea
     id: issue
     attributes:
-      label: "Describe your issue (Example below)"
-      description: "Tell us what's happening. Example: 'When I click the button, nothing happens. The console shows an error about a missing function.'"
-      placeholder: "Add your description here"
+      label: Describe Your Issue
+      description: "Briefly describe your problem. Example: 'When I click the button, nothing happens. The console shows an error about a missing function.'"
+      placeholder: "Enter your issue here"
     validations:
       required: true
 
   - type: textarea
-    id: tried
+    id: steps-tried
     attributes:
-      label: "What have you tried? 🧠 (Example below)"
-      description: "Tell us what you have already attempted. Example: 'I added console logs and checked the console, but I'm still confused about the error.'"
-    validations:
-      required: true
-    
+      label: What Have You Tried? 🧠
+      description: "List steps you’ve already attempted. Example: 'Checked console logs and added error handling.'"
+      validations:
+        required: true
+
   - type: textarea
-    id: expect
+    id: expected
     attributes:
-      label: "What are you expecting to happen?"
-      description: "Tell us what you want to happen."
-    validations:
-      required: true
+      label: What Are You Expecting to Happen?
+      description: "Describe the outcome you're aiming for. Example: 'Clicking the button should update the UI.'"
+      validations:
+        required: true
 
   - type: dropdown
-    id: console
+    id: error-check
     attributes:
-      label: "Check your console or terminal for errors. Select the option that applies:"
+      label: Did You Check for Errors? (Console or Terminal)
       options:
-        - I did not check my console/terminal for errors (THIS IS THE WRONG ANSWER)
-        - My console/terminal has no errors
-        - My console/terminal has errors I am providing below
-    validations:
-      required: true
+        - Yes, I found errors (add details below)
+        - Yes, but no errors appeared
+        - No, I didn’t check (please check before submitting!)
+      validations:
+        required: true
 
   - type: textarea
     id: console-errors
     attributes:
-      label: "Console Error Messages"
-      description: "List/type any error messages. (Screenshots can be useful too!)"
-      placeholder: "Use N/A if this doesn't apply. To post code, use three backticks (``` before and after your code block)"
-      render: bash
-    validations:
-      required: true
-
-  - type: textarea
-    id: network-tab
-    attributes:
-      label: "Did you check your network tab in dev tools (for data issues)? What did you find?"
-      description: "Provide response and preview data if applicable. Use N/A if this doesn’t apply."
-      placeholder: "To post code, use three backticks (``` before and after your code block)"
-      render: bash
-    validations:
-      required: true
+      label: Console/Terminal Error Messages
+      description: "Paste any error messages. Use N/A if none apply."
+      placeholder: "Enter error messages or N/A"
+      validations:
+        required: true
 
   - type: markdown
     attributes:
       value: |
         ## Research and Resources 🔍  
-        Learning to search for solutions is half the battle! Let's refine your searching skills and build your knowledge.  
-
-        ### LEARNING OBJECTIVE(S):  
-        - Improve your ability to research code issues and errors  
-        - Refine search techniques for better results
+        Have you researched your issue? Add up to 3 helpful resources you found.  
+        *Note: Research is optional but encouraged to improve your problem-solving skills!*
 
   - type: input
-    id: link-one
+    id: resource-1
     attributes:
-      label: "Research Link 1 (A helpful resource you found)"
-      description: "Paste a useful link from your research and explain why it helped."
-    validations:
-      required: true
+      label: Research Link 1 (Optional)
+      description: "Paste a helpful link and explain why it’s relevant."
+      placeholder: "e.g., Stack Overflow, MDN Docs"
 
   - type: input
-    id: link-two
+    id: resource-2
     attributes:
-      label: "Research Link 2 (Another helpful resource)"
-      description: "Paste another helpful link and explain how it supports your issue."
-    validations:
-      required: true
+      label: Research Link 2 (Optional)
+      description: "Add another useful link."
 
   - type: input
-    id: link-three
+    id: resource-3
     attributes:
-      label: "Research Link 3 (Another helpful resource)"
-      description: "Paste a third helpful link and explain how it supports your issue."
-    validations:
-      required: true
+      label: Research Link 3 (Optional)
+      description: "Add a third useful link."
 
   - type: textarea
-    id: link-explanations
+    id: code-link
     attributes:
-      label: "Links Explanation"
-      description: "What did you learn from all of the resource/links you listed above?"
-    validations:
-      required: true
-
-  - type: markdown
-    attributes:
-      value: |
-        ## Share Your Code 💻  
-        We need to see the actual code causing the issue, so **no screenshots** please! Share the GitHub file link. 
-        [Use this ticket if you need help](https://github.com/orgs/nss-evening-web-development/discussions/1174).
-
-        ### LEARNING OBJECTIVE(S):  
-        - Learn to share your code effectively using GitHub  
-        - Identify specific issues in your code more easily
-
-  - type: textarea
-    id: repo-links
-    attributes:
-      label: "GitHub FILE links - DO NOT PUT A LINK TO YOUR WHOLE REPO."
-      description: "Share a link to the specific file (not the whole repo) where you need help. We will not review requests that do not submit links to the impacted files."
-    validations:
-      required: true
-
-  - type: markdown
-    attributes:
-      value: |
-        ## FINAL CHECKLIST 
-        ### 1. Have you searched other help tickets? If not, please do that first. 🕵️‍♂️
-        ### 2. Is your title descriptive and related to the TECH issue, not just your project name?
-
-        Any ticket that is not completed, will be delayed or ignored. Just keeping it real.
+      label: Share Your Code
+      description: "Provide a **direct link** to the GitHub file causing the issue (not the whole repo)."
+      placeholder: "e.g., https://github.com/username/repo/blob/main/file.js"
+      validations:
+        required: true
