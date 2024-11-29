@@ -1,86 +1,142 @@
+title: "[Help Needed] - Brief Summary of Your Issue"
+labels: ["help request"] # You can add more labels if needed
+categories: 
+  - "General Discussions" # Adjust category name if you have different categories
 body:
   - type: markdown
     attributes:
       value: |
-        **👋 Welcome!**
-        Please complete this template to help us assist you better. Answer the questions in each section thoroughly and honestly.
-        
-        **⚠️ Before Submitting:**
-        - Have you searched for solutions or checked the archives? If not, please do that first.
-        - Double-check that your issue is related to **technical problems** and not a general question.
+        **Welcome! 👋**  
+        We're here to help, and by answering these questions, you'll help us understand your problem faster and also learn some valuable problem-solving skills along the way!  
+        **Make sure you're using this Help Discussion for technical issues.**
+
+  - type: checkboxes
+    attributes:
+      label: "Have you searched other help tickets? If not, please do that first. 🕵️‍♂️"
+      options:
+        - label: "YES, I have"
+          required: true
+
+  - type: checkboxes
+    attributes:
+      label: "Is your title descriptive and related to the TECH issue, not just your project name?"
+      options:
+        - label: "YES"
+          required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Describing Your Problem 🤔  
+        This section helps you practice explaining technical issues clearly—a crucial skill for your tech career!
+        In this section, you may use video like [Loom](https://www.loom.com/) or [Veed](https://www.veed.io/) if writing is difficult for you.
+        **VIDEOS SHOULD BE 5 MINUTES OR LESS**
+
+        ### LEARNING OBJECTIVE(S):  
+        - Build your technical vocabulary  
+        - Practice using debugging and developer tools  
+        - Learn how to ask for help effectively
+
+  - type: textarea
+    id: issue
+    attributes:
+      label: "Describe your issue (Example below)"
+      description: "Tell us what's happening. Example: 'When I click the button, nothing happens. The console shows an error about a missing function.'"
+      placeholder: "Add your description here"
+      required: true
+
+  - type: textarea
+    id: tried
+    attributes:
+      label: "What have you tried? 🧠 (Example below)"
+      description: "Tell us what you have already attempted. Example: 'I added console logs and checked the console, but I'm still confused about the error.'"
+      required: true
+
+  - type: textarea
+    id: expect
+    attributes:
+      label: "What are you expecting to happen?"
+      description: "Tell us what you want to happen."
+      required: true
 
   - type: dropdown
-    id: topic
+    id: console
     attributes:
-      label: What is your issue related to? (Choose one)
-      description: Select the most relevant topic for your issue.
+      label: "Check your console or terminal for errors. Select the option that applies:"
       options:
-        - Frontend (HTML, CSS, JavaScript, React, etc.)
-        - Backend (Python, Django, C#, SQL, etc.)
-        - Tooling (Git/GitHub, VSCode, Deployments, etc.)
-        - Career Support (Portfolios, Resumes, LinkedIn, etc.)
-        - Other
+        - I did not check my console/terminal for errors (THIS IS THE WRONG ANSWER)
+        - My console/terminal has no errors
+        - My console/terminal has errors I am providing below
+      required: true
+
+  - type: textarea
+    id: console-errors
+    attributes:
+      label: "Console Error Messages"
+      description: "List/type any error messages. (Screenshots can be useful too!)"
+      placeholder: "Use N/A if this doesn't apply. To post code, use three backticks (``` before and after your code block)"
+      required: true
+
+  - type: textarea
+    id: network-tab
+    attributes:
+      label: "Did you check your network tab in dev tools (for data issues)? What did you find?"
+      description: "Provide response and preview data if applicable. Use N/A if this doesn’t apply."
+      placeholder: "To post code, use three backticks (``` before and after your code block)"
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Research and Resources 🔍  
+        Learning to search for solutions is half the battle! Let's refine your searching skills and build your knowledge.  
+
+        ### LEARNING OBJECTIVE(S):  
+        - Improve your ability to research code issues and errors  
+        - Refine search techniques for better results
 
   - type: input
-    id: summary
+    id: link-one
     attributes:
-      label: Brief Summary of the Problem
-      description: Write a one-sentence summary of your issue.
-      placeholder: "e.g., 'React component is not updating on button click.'"
-      required: true
-
-  - type: textarea
-    id: describe_problem
-    attributes:
-      label: Describe Your Problem (Max 5 Sentences)
-      description: Explain what you're experiencing, including key details. Avoid vague terms.
-      placeholder: "e.g., 'When I click the button, nothing happens. Console shows an error about missing function.'"
-      required: true
-
-  - type: textarea
-    id: what_tried
-    attributes:
-      label: What Have You Tried So Far?
-      description: List what steps you’ve already attempted (e.g., console logs, debugging tools, searching for similar issues).
-      placeholder: "e.g., 'Added console logs and checked for syntax errors but didn’t find the issue.'"
-      required: true
-
-  - type: dropdown
-    id: console_check
-    attributes:
-      label: Did You Check the Console or Terminal for Errors?
-      options:
-        - Yes, I checked and found errors. (Provide details below)
-        - Yes, but no errors appeared.
-        - No, I didn’t check. (This is the wrong answer! Go back and check first.)
-
-  - type: textarea
-    id: console_errors
-    attributes:
-      label: Console/Terminal Error Messages
-      description: Paste any error messages you found, or write "N/A" if this doesn’t apply.
-      placeholder: "e.g., 'TypeError: Cannot read property 'map' of undefined'"
-      required: true
-
-  - type: textarea
-    id: resources
-    attributes:
-      label: Research and Resources
-      description: Share at least one helpful resource you found while researching this problem.
-      placeholder: "e.g., 'I found a Stack Overflow thread about similar issues but couldn’t apply the solution.'"
-
-  - type: input
-    id: expected_outcome
-    attributes:
-      label: What Are You Expecting to Happen?
-      description: Describe the desired outcome or behavior after resolving the issue.
-      placeholder: "e.g., 'The button click should trigger the function and update the state.'"
+      label: "Research Link 1 (A helpful resource you found)"
+      description: "Paste a useful link from your research and explain why it helped."
       required: true
 
   - type: input
-    id: code_link
+    id: link-two
     attributes:
-      label: Share Your Code (GitHub File Link)
-      description: Provide the **direct link** to the code causing the issue. Do not link your entire repository.
-      placeholder: "e.g., 'https://github.com/username/repo/blob/main/src/components/Button.js'"
+      label: "Research Link 2 (Another helpful resource)"
+      description: "Paste another helpful link and explain how it supports your issue."
+      required: true
+
+  - type: input
+    id: link-three
+    attributes:
+      label: "Research Link 3 (Another helpful resource)"
+      description: "Paste a third helpful link and explain how it supports your issue."
+      required: true
+
+  - type: textarea
+    id: link-explanations
+    attributes:
+      label: "Links Explanation"
+      description: "What did you learn from all of the resource/links you listed above?"
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Share Your Code 💻  
+        We need to see the actual code causing the issue, so **no screenshots** please! Share the GitHub file link. 
+        [Use this ticket if you need help](https://github.com/orgs/nss-evening-web-development/discussions/1174).
+
+        ### LEARNING OBJECTIVE(S):  
+        - Learn to share your code effectively using GitHub  
+        - Identify specific issues in your code more easily
+
+  - type: textarea
+    id: repo-links
+    attributes:
+      label: "GitHub FILE links - DO NOT PUT A LINK TO YOUR WHOLE REPO."
+      description: "Share a link to the specific file (not the whole repo) where you need help. We will not review requests that do not submit links to the impacted files."
       required: true
