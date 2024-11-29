@@ -107,14 +107,14 @@ body:
     validations:
       required: true
 
-- type: markdown
-    attributes:
-      value: |
-        ## **Before Submitting:**  
-        - ✅ Have you searched similar tickets or resources?  
-        - ✅ Is your title descriptive and specific to your TECH issue?  
-
-        ### REMONDER: Our team reviews requests within **48 hours**.
+  - type: markdown
+      attributes:
+        value: |
+          ## **Before Submitting:**  
+          - ✅ Have you searched similar tickets or resources?  
+          - ✅ Is your title descriptive and specific to your TECH issue?  
+  
+          ### REMONDER: Our team reviews requests within **48 hours**.
 
 
   
