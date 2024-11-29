@@ -1,5 +1,5 @@
-title: "[Help Needed] - Brief Summary of Your Issue"
-labels: ["help request"]
+title: "[DESCRIBE HELP NEEDED] - Brief Summary of Your Issue"
+labels: ["HELP REQUEST"]
 body:
   - type: markdown
     attributes:
