@@ -1,0 +1,90 @@
+name: "Help Request"
+about: "Submit a help request for technical issues or guidance."
+title: "[Help Needed] - Brief Summary of Your Issue"
+labels: ["help request"] # Default label; more will be added through dropdown
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **👋 Welcome!**
+        Please complete this template to help us assist you better. Answer the questions in each section thoroughly and honestly.
+        
+        **⚠️ Before Submitting:**
+        - Have you searched for solutions or checked the archives? If not, please do that first.
+        - Double-check that your issue is related to **technical problems** and not a general question.
+
+  - type: dropdown
+    id: topic
+    attributes:
+      label: What is your issue related to? (Choose one)
+      description: Select the most relevant topic for your issue.
+      options:
+        - Frontend (HTML, CSS, JavaScript, React, etc.)
+        - Backend (Python, Django, C#, SQL, etc.)
+        - Tooling (Git/GitHub, VSCode, Deployments, etc.)
+        - Career Support (Portfolios, Resumes, LinkedIn, etc.)
+        - Other
+
+  - type: input
+    id: summary
+    attributes:
+      label: Brief Summary of the Problem
+      description: Write a one-sentence summary of your issue.
+      placeholder: "e.g., 'React component is not updating on button click.'"
+      required: true
+
+  - type: textarea
+    id: describe_problem
+    attributes:
+      label: Describe Your Problem (Max 5 Sentences)
+      description: Explain what you're experiencing, including key details. Avoid vague terms.
+      placeholder: "e.g., 'When I click the button, nothing happens. Console shows an error about missing function.'"
+      required: true
+
+  - type: textarea
+    id: what_tried
+    attributes:
+      label: What Have You Tried So Far?
+      description: List what steps you’ve already attempted (e.g., console logs, debugging tools, searching for similar issues).
+      placeholder: "e.g., 'Added console logs and checked for syntax errors but didn’t find the issue.'"
+      required: true
+
+  - type: dropdown
+    id: console_check
+    attributes:
+      label: Did You Check the Console or Terminal for Errors?
+      options:
+        - Yes, I checked and found errors. (Provide details below)
+        - Yes, but no errors appeared.
+        - No, I didn’t check. (This is the wrong answer! Go back and check first.)
+
+  - type: textarea
+    id: console_errors
+    attributes:
+      label: Console/Terminal Error Messages
+      description: Paste any error messages you found, or write "N/A" if this doesn’t apply.
+      placeholder: "e.g., 'TypeError: Cannot read property 'map' of undefined'"
+      required: true
+
+  - type: textarea
+    id: resources
+    attributes:
+      label: Research and Resources
+      description: Share at least one helpful resource you found while researching this problem.
+      placeholder: "e.g., 'I found a Stack Overflow thread about similar issues but couldn’t apply the solution.'"
+
+  - type: input
+    id: expected_outcome
+    attributes:
+      label: What Are You Expecting to Happen?
+      description: Describe the desired outcome or behavior after resolving the issue.
+      placeholder: "e.g., 'The button click should trigger the function and update the state.'"
+      required: true
+
+  - type: input
+    id: code_link
+    attributes:
+      label: Share Your Code (GitHub File Link)
+      description: Provide the **direct link** to the code causing the issue. Do not link your entire repository.
+      placeholder: "e.g., 'https://github.com/username/repo/blob/main/src/components/Button.js'"
+      required: true
