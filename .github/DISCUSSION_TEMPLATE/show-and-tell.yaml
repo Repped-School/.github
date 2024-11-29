@@ -1,0 +1,85 @@
+title: "Show & Tell: [Insert Brief Title of Your Work]"
+labels: ["Show & Tell"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Welcome to Show and Tell! 🎉**  
+        Use this template to share your work, projects, or breakthroughs with the community.  
+        **Tips for a great post:**  
+        - Keep your descriptions clear and concise.  
+        - Include visuals or code snippets to showcase your work.  
+        - Share what inspired you and what challenges you faced.  
+
+  - type: input
+    id: project-name
+    attributes:
+      label: Name of Your Project or Work
+      description: "Give your project a clear and engaging title."
+      placeholder: "e.g., 'Recipe Tracker App' or 'My Personal Portfolio Website'"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What is your project about?
+      description: |
+        Provide a brief description of your project.  
+        Share the purpose, features, and tools/technologies you used.  
+      placeholder: "e.g., 'This is a web app that allows users to track their recipes. I built it using React and Firebase.'"
+    validations:
+      required: true
+
+  - type: textarea
+    id: inspiration
+    attributes:
+      label: What inspired this project?
+      description: "Share the motivation or problem that led you to create this project."
+      placeholder: "e.g., 'I wanted to help people organize their favorite recipes in one place.'"
+
+  - type: textarea
+    id: challenges
+    attributes:
+      label: What challenges did you face?
+      description: "Describe any obstacles or issues you encountered and how you overcame them."
+      placeholder: "e.g., 'I struggled with Firebase security rules but resolved it by...'"
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Show Us Your Work! ✨  
+        Add visuals, code snippets, or links to your project to give us a closer look.  
+
+  - type: input
+    id: project-link
+    attributes:
+      label: Project Link
+      description: "Provide a link to your live project, repository, or demo."
+      placeholder: "e.g., https://my-recipe-tracker-app.com"
+
+  - type: textarea
+    id: code-snippet
+    attributes:
+      label: Code Snippet or Example (Optional)
+      description: "Share a snippet of your code or an example of your work. Use three backticks (```) to format as code."
+      placeholder: "```\n// Your code here\n```"
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Reflect on Your Journey (Optional)  
+        Share what you learned from building this project or how it helped you grow.  
+
+  - type: textarea
+    id: lessons-learned
+    attributes:
+      label: Lessons Learned
+      description: "What did you learn from creating this project? What would you do differently next time?"
+      placeholder: "e.g., 'I learned how to optimize API calls and manage application state effectively.'"
+
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for sharing your work! We’re excited to see what you’ve built. 🎉  
+        Feel free to respond to comments and engage with the community.
