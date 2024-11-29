@@ -6,20 +6,6 @@ body:
         We're here to help, and by answering these questions, you'll help us understand your problem faster and also learn some valuable problem-solving skills along the way!  
         **Make sure you're using this Help Discussion for technical issues.**
 
-  - type: checkboxes
-    attributes:
-      label: "Have you searched other help tickets? If not, please do that first. 🕵️‍♂️"
-      options:
-        - label: "YES, I have"
-          required: true
-
-  - type: checkboxes
-    attributes:
-      label: "Is your title descriptive and related to the TECH issue, not just your project name?"
-      options:
-        - label: "YES"
-          required: true
-
   - type: markdown
     attributes:
       value: |
@@ -28,11 +14,15 @@ body:
         In this section, you may use video like [Loom](https://www.loom.com/) or [Veed](https://www.veed.io/) if writing is difficult for you.
         **VIDEOS SHOULD BE 5 MINUTES OR LESS**
 
-        ### LEARNING OBJECTIVE(S):  
-        - Build your technical vocabulary  
-        - Practice using debugging and developer tools  
-        - Learn how to ask for help effectively
+  - type: markdown
+      attributes:
+        value: |
+          ## FINAL CHECKLIST 
+          ### 1. Have you searched other help tickets? If not, please do that first. 🕵️‍♂️
+          ### 2. Is your title descriptive and related to the TECH issue, not just your project name?
 
+          Any ticket that is not completed, will be delayed or ignored. Just keeping it real.
+          
   - type: textarea
     id: issue
     attributes:
