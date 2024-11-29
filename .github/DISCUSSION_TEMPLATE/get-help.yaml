@@ -13,15 +13,6 @@ body:
         This section helps you practice explaining technical issues clearly—a crucial skill for your tech career!
         In this section, you may use video like [Loom](https://www.loom.com/) or [Veed](https://www.veed.io/) if writing is difficult for you.
         **VIDEOS SHOULD BE 5 MINUTES OR LESS**
-
-  - type: markdown
-      attributes:
-        value: |
-          ## FINAL CHECKLIST 
-          ### 1. Have you searched other help tickets? If not, please do that first. 🕵️‍♂️
-          ### 2. Is your title descriptive and related to the TECH issue, not just your project name?
-
-          Any ticket that is not completed, will be delayed or ignored. Just keeping it real.
           
   - type: textarea
     id: issue
@@ -139,3 +130,12 @@ body:
       description: "Share a link to the specific file (not the whole repo) where you need help. We will not review requests that do not submit links to the impacted files."
     validations:
       required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## FINAL CHECKLIST 
+        ### 1. Have you searched other help tickets? If not, please do that first. 🕵️‍♂️
+        ### 2. Is your title descriptive and related to the TECH issue, not just your project name?
+
+        Any ticket that is not completed, will be delayed or ignored. Just keeping it real.
