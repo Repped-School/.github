@@ -4,7 +4,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        **Welcome to Show and Tell! 🎉**  
+        ## **Welcome to Show and Tell! 🎉**  
         Use this template to share your work, projects, or breakthroughs with the community.  
         **Tips for a great post:**  
         - Keep your descriptions clear and concise.  
