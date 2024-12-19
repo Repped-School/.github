@@ -12,7 +12,7 @@ At Repped School, we’re blending accessible, real-world tech education with a 
 - **Mastering Tech Skills:** From foundational skills to advanced concepts, we cover everything you need to level up—front-end, back-end, cloud, AI, and more. And we teach it all with accessibility and practical application at the forefront.
 
 ## What You’ll Get:
-- **Project-Based Courses: **Learn by doing. Each project is tailored to help you build skills that matter in the real world while accommodating diverse learning styles.
+- **Project-Based Courses:** Learn by doing. Each project is tailored to help you build skills that matter in the real world while accommodating diverse learning styles.
 - **Inclusive Community:** Connect with a like-minded network of learners who understand your journey and celebrate your wins.
 - **Empowered Learning:** Tools, techniques, and resources designed specifically for neurodivergent learners, ensuring you can focus on your strengths and overcome barriers.
 - **Expert Mentorship:** Get guidance from technologists and leaders who’ve been in your shoes and want to see you succeed.
